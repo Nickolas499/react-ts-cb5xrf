@@ -1,0 +1,6 @@
+.rightside {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg1);
+  height: 100px;
+}

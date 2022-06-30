@@ -1,0 +1,124 @@
+.headerbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  background: var(--bg);
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 0 10px;
+}
+.headerbar > .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 80%;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Rubik Moonrocks', cursive;
+}
+
+.headerbar > .searchbox {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.005);
+  box-shadow: inset 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 400px;
+  height: 35px;
+  padding: 5px;
+  overflow: hidden; /* Clear floats */
+}
+.headerbar > .searchbox > .search,
+.submit {
+  float: left;
+}
+
+.headerbar > .searchbox > .search {
+  padding: 5px 10px;
+  height: 23px;
+  width: 360px;
+  font: normal 13px 'trebuchet MS', arial, helvetica;
+  background: var(--bg);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.headerbar > .searchbox > .submit {
+  background-color: #6cbb6b;
+  background-image: linear-gradient(#95d788, #6cbb6b);
+  border-radius: 3px 50px 50px 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #7eba7c #578e57 #447d43;
+  height: 25px;
+  margin: 0 0 0 7px;
+  padding: 0;
+  width: 90px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica;
+  color: #23441e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background: var(--bg);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.headerbar > .searchbox > .submit:hover {
+  background-color: var(--hover);
+}
+
+.headerbar > .searchbox > .submit:active {
+  background: var(--active);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+.headerbar > .searchbox > .submit::-moz-focus-inner {
+  border: 0; /* Small centering fix for Firefox */
+}
+
+.headerbar > .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 100%;
+}
+.headerbar > .menu > .ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 45px;
+  height: 80%;
+  color: rgba(255, 255, 255, 0.8);
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.headerbar > .menu > .icon {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.ico:hover {
+  cursor: pointer;
+  background: var(--hover);
+}
+.ico:active {
+  cursor: pointer;
+  background: var(--active);
+}
